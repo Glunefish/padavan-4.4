@@ -178,7 +178,7 @@ void __init ralink_clk_init(void)
 		char *oc_pll = MT7621_CPU_FREQ;
 		sscanf(oc_pll,"%X",&a);
 		mc_cpll &= ~(0x7ff);
-		mc_cpll |=  (a);
+		mc_cpll |=  (0x362);
 		rt_memc_w32(mc_cpll,DRAMC_REG_MPLL18);
 #endif
 		mc_fb = (mc_cpll >> CPLL_FBDIV_SHIFT) & CPLL_FBDIV_MASK;
