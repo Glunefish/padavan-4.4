@@ -737,10 +737,6 @@ function show_menu(L1, L2, L3){
 		$("tabMenu").innerHTML = "";
 }
 
-function show_footer(){
-
-	flash_button();
-}
 
 function show_top_status(){
 	var $j = jQuery.noConflict();
