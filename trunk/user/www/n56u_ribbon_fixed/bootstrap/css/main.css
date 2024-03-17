@@ -1,12 +1,28 @@
 body{
+    background: url("/bootstrap/img/bgd.jpg") repeat scroll center top transparent;
     background-color: #282828;
     overflow-y: scroll;
+    z-index:-1;
 }
 body.body_iframe{
     background: #F5F5F5;
     margin: 0 5px 0 5px;
     min-width: inherit;
     overflow-y: auto;
+    background-image: -moz-linear-gradient(top, rgba(34, 34, 34, 0.82), rgba(34, 34, 34, 0));
+    background-image: -ms-linear-gradient(top, rgba(34, 34, 34, 0.82), rgba(34, 34, 34, 0));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(34, 34, 34, 0.82)), to(rgba(34, 34, 34, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(34, 34, 34, 0.82), rgba(34, 34, 34, 0));
+    background-image: -o-linear-gradient(top, rgba(34, 34, 34, 0.82), rgba(34, 34, 34, 0));
+    background-image: linear-gradient(top, rgba(34, 34, 34, 0.82), rgba(34, 34, 34, 0));
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(34, 34, 34, 0.82)', endColorstr='rgba(34, 34, 34, 0)', GradientType=0);
+    border-color: rgba(34, 34, 34, 0.82) rgba(34, 34, 34, 0.82) rgba(34, 34, 34, 0.82);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color:#ffffff;
+    margin-bottom: 1px;
 }
 
 .wrapper {
@@ -15,10 +31,11 @@ body.body_iframe{
 }
 
 #logo {
-    background-image: url("/bootstrap/img/asus_logo.png");
+    background-image: url("/bootstrap/img/rt_logo.png");
     width: 150px;
     height: 71px;
     margin-top: 40px;
+    z-index:1;
 }
 #logo:hover {
     cursor: pointer;
