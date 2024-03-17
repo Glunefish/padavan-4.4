@@ -36,7 +36,6 @@ var ccount = <% get_static_ccount(); %>;
 function initial(){
 	show_banner(0);
 	show_menu(1, -1, 0);
-	show_footer();
 	show_usb_ports();
 	show_ata_pool();
 	show_mmc_card();
