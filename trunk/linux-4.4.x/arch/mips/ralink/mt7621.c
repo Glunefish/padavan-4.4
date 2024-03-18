@@ -149,7 +149,7 @@ void __init ralink_clk_init(void)
 {
 	int cpu_fdiv, cpu_ffrac;
 	int mc_fb, mc_div;
-	u32 clk_sts, mc_cpll, i;
+	u32 clk_sts, mc_cpll;
 	u8 clk_sel, xtal_mode, mc_prediv_sel;
 	u64 cpu_clk;
 	u32 xtal_clk;
@@ -178,13 +178,8 @@ void __init ralink_clk_init(void)
 		char *oc_pll = MT7621_CPU_FREQ;
 		sscanf(oc_pll,"%X",&a);
 		mc_cpll &= ~(0x7ff);
-		mc_cpll |=  (0x362);
+		mc_cpll |=  (a);
 		rt_memc_w32(mc_cpll,DRAMC_REG_MPLL18);
-		for(i=0;i<1024;i++);
-			fbdiv = (pll >> CPU_PLL_FBDIV_SHIFT) & CPU_PLL_FBDIV_MASK;
-                	prediv = (pll >> CPU_PLL_PREDIV_SHIFT) & CPU_PLL_PREDIV_MASK;
-  	            	cpu_clk = ((fbdiv + 1) * xtal_clk) >> prediv_tbl[prediv];
-                 break;
 #endif
 		mc_fb = (mc_cpll >> CPLL_FBDIV_SHIFT) & CPLL_FBDIV_MASK;
 		mc_prediv_sel = (mc_cpll >> CPLL_PREDIV_SHIFT)
