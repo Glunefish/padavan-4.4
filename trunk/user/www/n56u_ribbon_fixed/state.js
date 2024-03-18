@@ -737,6 +737,17 @@ function show_menu(L1, L2, L3){
 		$("tabMenu").innerHTML = "";
 }
 
+function show_footer(){
+	
+	footer_code = '<div align="center" class="bottom-image"></div>\n';
+	footer_code +='<div align="center" class="copyright"><#footer_copyright_desc#></div>\n';
+	footer_code +='<div align="center">\n';
+	footer_code +='</div>\n';
+
+	$("footer").innerHTML = footer_code;
+	flash_button();
+}
+
 
 function show_top_status(){
 	var $j = jQuery.noConflict();
