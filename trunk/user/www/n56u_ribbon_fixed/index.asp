@@ -37,6 +37,7 @@ function initial(){
 	show_banner(0);
 	show_menu(1, -1, 0);
 	show_usb_ports();
+	show_footer();
 	show_ata_pool();
 	show_mmc_card();
 	show_middle_status();
