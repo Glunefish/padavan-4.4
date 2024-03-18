@@ -9,7 +9,7 @@ include $(ROOTDIR)/user/shared/boards.mk
 PROJECT_HOME_URL="https:\/\/bitbucket.org\/padavan\/rt-n56u\/"
 PROJECT_HOME_URL_MOD="https:\/\/github.com\/hanwckf\/rt-n56u\/"
 
-LABEL_COPYRIGHT_TEXT='<a href="https:\/\/space.bilibili.com\/8607059" target="blank">Build by GruntFish(Finbarr)<\/a> \  <br><center><a href="https:\/\/github.com\/hanwckf\/Padavan-4.4\/" target="blank">Padavan<\/a><\/center>  \  <br><center><span> - 路海长 青野旷 越过群山追斜阳 - <\/span><\/center> '
+LABEL_COPYRIGHT_TEXT='<a href="https:\/\/space.bilibili.com\/8607059" target="blank">Build by GruntFish(Finbarr)<\/a> \  <br><center><a href="https:\/\/github.com\/Glunefish\/Padavan-4.4\/" target="blank">Padavan<\/a><\/center>  \  <br><center><span> - 路海长 青野旷 越过群山追斜阳 - <\/span><\/center> '
 
 BOARD_PATTERN=s/ZVMODELVZ/$(CONFIG_FIRMWARE_PRODUCT_ID)/g
 COPYR_PATTERN=s/ZVCOPYRVZ/$(LABEL_COPYRIGHT_TEXT)/g
