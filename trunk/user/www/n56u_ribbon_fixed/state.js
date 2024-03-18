@@ -742,6 +742,7 @@ function show_footer(){
 	footer_code = '<div align="center" class="bottom-image"></div>\n';
 	footer_code +='<div align="center" class="copyright"><#footer_copyright_desc#></div>\n';
 	footer_code +='<div align="center">\n';
+	footer_code +='</br>\n';
 	footer_code +=' <span> - 路海长 青夜旷 越过群山追斜阳 - </span></br>\n';
 	footer_code +='</div>\n';
 
